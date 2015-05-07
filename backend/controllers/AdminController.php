@@ -102,6 +102,14 @@ class AdminController extends Controller
 
         return $this->redirect(['index']);
     }
+    
+    public function actionTest(){
+        $message = "Hello YII2!";
+        return $this->render('test', [
+            'message' => $message,
+        ]);
+        
+    }
 
     /**
      * Finds the Admin model based on its primary key value.
